@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['pavise.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'pavise.com',
+        pathname: '**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
